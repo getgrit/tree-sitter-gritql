@@ -1,0 +1,27 @@
+[package]
+name = "tree-sitter-PARSER_NAME"
+description = "PARSER_NAME grammar for the tree-sitter parsing library"
+version = "0.1.0"
+keywords = ["incremental", "parsing", "PARSER_NAME"]
+categories = ["parsing", "text-editors"]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-PARSER_NAME"
+authors = ["AUTHOR_NAME"]
+edition = "2021"
+license = "MIT"
+
+build = "bindings/rust/build.rs"
+include = [
+  "bindings/rust/*",
+  "grammar.js",
+  "queries/*",
+  "src/*"
+]
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[dependencies]
+tree-sitter = "~0.20.10"
+
+[build-dependencies]
+cc = "^1.0"

@@ -1,0 +1,16 @@
+# NOTE: remove this workflow if you don't want to publish packages
+name: Publish package
+
+on:
+  push:
+    tags: ["*"]
+
+jobs:
+  npm:
+    uses: tree-sitter-grammars/.github/.github/workflows/package-npm.yml@main
+    secrets:
+      NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+  crates:
+    uses: tree-sitter-grammars/.github/.github/workflows/package-crates.yml@main
+    secrets:
+      CARGO_REGISTRY_TOKEN: ${{secrets.CARGO_TOKEN}}

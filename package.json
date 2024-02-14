@@ -1,0 +1,33 @@
+{
+  "name": "tree-sitter-PARSER_NAME",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "PARSER_NAME grammar for tree-sitter",
+  "repository": "tree-sitter-grammars/tree-sitter-PARSER_NAME",
+  "author": "AUTHOR_NAME",
+  "keywords": [
+    "tree-sitter",
+    "parser",
+    "lexer",
+    "PARSER_NAME"
+  ],
+  "scripts": {
+    "build": "tree-sitter generate",
+    "parse": "tree-sitter parse",
+    "test": "tree-sitter test",
+    "wasm": "tree-sitter build-wasm",
+    "web": "tree-sitter web-ui"
+  },
+  "main": "bindings/node",
+  "dependencies": {
+    "nan": "^2.18.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "~0.21.0-pre-release-1"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.PARSER_NAME"
+    }
+  ]
+}
