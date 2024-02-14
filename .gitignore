@@ -1,0 +1,10 @@
+node_modules/
+# Uncomment to ignore the lockfiles:
+# package-lock.json
+# yarn.lock
+# Cargo.lock
+
+build/
+target/
+*.wasm
+*.o
