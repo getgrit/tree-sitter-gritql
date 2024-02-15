@@ -19,11 +19,25 @@ on:
 
 jobs:
   test:
-    uses: tree-sitter-grammars/.github/.github/workflows/ci.yml@main
-    if: "!github.event.repository.is_template && github.event.head_commit.message != 'Initial commit'"
-    with:
-      # NOTE: change to true to also test the rust library:
-      test-library: false
-  # NOTE: uncomment this job if you use an external scanner:
-  # fuzz:
-  #   uses: tree-sitter-grammars/.github/.github/workflows/fuzz.yml@main
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: true
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm install
+      - run: npm test
+
+  test_windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm install
+      - run: npm run-script test-windows
