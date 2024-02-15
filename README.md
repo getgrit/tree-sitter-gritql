@@ -12,6 +12,8 @@ GritQl is an ast-aware query language that lets you quickly search and rewrite y
 
 ## References
 
+[The Grit Standard Libarary](https://github.com/getgrit/stdlib)
+
 <!-- NOTE: add the grammar's references here -->
 
 [ci]: https://img.shields.io/github/actions/workflow/status/tree-sitter-grammars/tree-sitter-gritql/ci.yml?logo=github&label=CI
