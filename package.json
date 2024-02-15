@@ -1,22 +1,23 @@
 {
-  "name": "tree-sitter-PARSER_NAME",
+  "name": "tree-sitter-gritql",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "PARSER_NAME grammar for tree-sitter",
-  "repository": "tree-sitter-grammars/tree-sitter-PARSER_NAME",
-  "author": "AUTHOR_NAME",
+  "description": "gritql grammar for tree-sitter",
+  "repository": "tree-sitter-grammars/tree-sitter-gritql",
+  "author": "Grit",
   "keywords": [
     "tree-sitter",
     "parser",
     "lexer",
-    "PARSER_NAME"
+    "gritql"
   ],
   "scripts": {
     "build": "tree-sitter generate",
     "parse": "tree-sitter parse",
     "test": "tree-sitter test",
     "wasm": "tree-sitter build-wasm",
-    "web": "tree-sitter web-ui"
+    "web": "tree-sitter web-ui",
+    "generate": "tree-sitter generate && tree-sitter build-wasm"
   },
   "main": "bindings/node",
   "dependencies": {
@@ -27,7 +28,7 @@
   },
   "tree-sitter": [
     {
-      "scope": "source.PARSER_NAME"
+      "scope": "source.gritql"
     }
   ]
 }
