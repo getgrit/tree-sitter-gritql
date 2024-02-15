@@ -2,7 +2,7 @@
 {
   "targets": [
     {
-      "target_name": "tree_sitter_PARSER_NAME_binding",
+      "target_name": "tree_sitter_gritql_binding",
       "include_dirs": [
         "<!(node -e \"require('nan')\")",
         "src"

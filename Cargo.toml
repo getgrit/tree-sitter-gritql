@@ -1,10 +1,10 @@
 [package]
-name = "tree-sitter-PARSER_NAME"
-description = "PARSER_NAME grammar for the tree-sitter parsing library"
+name = "tree-sitter-gritql"
+description = "gritql grammar for the tree-sitter parsing library"
 version = "0.1.0"
-keywords = ["incremental", "parsing", "PARSER_NAME"]
+keywords = ["incremental", "parsing", "gritql"]
 categories = ["parsing", "text-editors"]
-repository = "https://github.com/tree-sitter-grammars/tree-sitter-PARSER_NAME"
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-gritql"
 authors = ["AUTHOR_NAME"]
 edition = "2021"
 license = "MIT"
