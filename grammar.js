@@ -6,9 +6,6 @@
 
 const PREC = {
   NOT: 0,
-  // setting "and" and "or" priority to be equivalent
-  // is not a parse generation error, but we expect that
-  // it should be find out why.
   AND_IN_LINE: 3,
   OR_IN_LINE: 2,
   PATTERN_AS: 10,
