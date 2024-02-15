@@ -8,6 +8,8 @@
 
 A tree-sitter parser for gritql files.
 
+GritQl is an ast-aware query language that lets you quickly search and rewrite your code.
+
 ## References
 
 <!-- NOTE: add the grammar's references here -->
