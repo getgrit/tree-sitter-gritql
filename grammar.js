@@ -222,7 +222,6 @@ module.exports = grammar({
       ),
 
     // --- conditional pattern ------------
-    // TODO: check to see if fields behave well in unnamed nodes, adjust accordingly
     patternIfElse: ($) =>
       prec.right(
         seq(
