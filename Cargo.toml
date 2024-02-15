@@ -5,7 +5,7 @@ version = "0.1.0"
 keywords = ["incremental", "parsing", "gritql"]
 categories = ["parsing", "text-editors"]
 repository = "https://github.com/tree-sitter-grammars/tree-sitter-gritql"
-authors = ["AUTHOR_NAME"]
+authors = ["Grit"]
 edition = "2021"
 license = "MIT"
 
