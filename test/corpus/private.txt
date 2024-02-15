@@ -1,0 +1,31 @@
+================================================================================
+Private pattern definitions
+================================================================================
+
+private pattern nice() {
+  `foo`
+}
+
+pattern foo() {
+  `bar`
+}
+
+nice()
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (definition
+    (patternDefinition
+      (name)
+      (patternDefinitionBody
+        (codeSnippet
+          (backtickSnippet)))))
+  (definition
+    (patternDefinition
+      (name)
+      (patternDefinitionBody
+        (codeSnippet
+          (backtickSnippet)))))
+  (nodeLike
+    (name)))

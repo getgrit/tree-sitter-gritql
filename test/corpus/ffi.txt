@@ -1,0 +1,25 @@
+================================================================================
+Foreign function definitions
+================================================================================
+
+function adder() js {
+  return 9
+}
+
+`x` => adder()
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (definition
+    (foreignFunctionDefinition
+      (name)
+      (foreignLanguageName)
+      (foreignFunctionBody
+        (foreignLanguageCode
+          (noBraces)))))
+  (rewrite
+    (codeSnippet
+      (backtickSnippet))
+    (nodeLike
+      (name))))
