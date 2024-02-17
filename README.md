@@ -8,6 +8,18 @@ A tree-sitter parser for [GritQL](https://docs.grit.io/language/overview) files.
 
 GritQl is an AST-aware query language for searching and transforming source code.
 
+## Syntax Example
+
+```grit
+language js
+
+`console.log($my_message)` => `winston.info($my_message)` where {
+  $my_message <: string()
+}
+```
+
+Explore the [interactive tutorial](https://docs.grit.io/tutorials/gritql) to learn more about GritQL.
+
 ## References
 - [GritQL Language Overview](https://docs.grit.io/language/overview)
 - [GritQL Language Reference](https://docs.grit.io/language/syntax)
