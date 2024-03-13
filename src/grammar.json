@@ -5892,6 +5892,10 @@
         {
           "type": "STRING",
           "value": "sql"
+        },
+        {
+          "type": "STRING",
+          "value": "toml"
         }
       ]
     },

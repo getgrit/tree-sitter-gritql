@@ -593,6 +593,7 @@ module.exports = grammar({
         'ast',
         'universal',
         'sql',
+        'toml'
       ),
 
     backtickSnippet: (_$) => /`(?:[^`\\]|\\\$|\\\\|\\`|\\n)*`/,
