@@ -77,7 +77,7 @@ module.exports = grammar({
         seq(
           'language',
           field('name', $.languageName),
-          optional(field('flavor', seq('(', $.language_flavor, ')', optional(';')))),
+          optional(seq('(', field('flavor', $.language_flavor), ')', optional(';'))),
         ),
       ),
     // --- patterns
