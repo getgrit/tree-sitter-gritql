@@ -2252,21 +2252,9 @@
     "named": true,
     "fields": {
       "flavor": {
-        "multiple": true,
+        "multiple": false,
         "required": false,
         "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": ";",
-            "named": false
-          },
           {
             "type": "language_flavor",
             "named": true
