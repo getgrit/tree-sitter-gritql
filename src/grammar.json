@@ -399,41 +399,8 @@
                       "value": "("
                     },
                     {
-                      "type": "SEQ",
-                      "members": [
-                        {
-                          "type": "SYMBOL",
-                          "name": "language_flavor"
-                        },
-                        {
-                          "type": "REPEAT",
-                          "content": {
-                            "type": "SEQ",
-                            "members": [
-                              {
-                                "type": "STRING",
-                                "value": ","
-                              },
-                              {
-                                "type": "SYMBOL",
-                                "name": "language_flavor"
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "type": "CHOICE",
-                          "members": [
-                            {
-                              "type": "STRING",
-                              "value": ","
-                            },
-                            {
-                              "type": "BLANK"
-                            }
-                          ]
-                        }
-                      ]
+                      "type": "SYMBOL",
+                      "name": "language_flavor"
                     },
                     {
                       "type": "STRING",
