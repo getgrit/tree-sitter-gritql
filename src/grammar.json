@@ -5863,6 +5863,10 @@
         {
           "type": "STRING",
           "value": "toml"
+        },
+        {
+          "type": "STRING",
+          "value": "php"
         }
       ]
     },
@@ -6074,4 +6078,3 @@
   "inline": [],
   "supertypes": []
 }
-
