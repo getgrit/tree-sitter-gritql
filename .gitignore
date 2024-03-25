@@ -8,3 +8,4 @@ build/
 target/
 *.wasm
 *.o
+*.so

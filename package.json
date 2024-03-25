@@ -17,14 +17,26 @@
     "test": "tree-sitter test",
     "wasm": "tree-sitter build-wasm",
     "web": "tree-sitter web-ui",
-    "generate": "tree-sitter generate && tree-sitter build-wasm"
+    "generate": "tree-sitter generate && tree-sitter build-wasm",
+    "install": "node-gyp-build",
+    "prebuildify": "prebuildify --napi --strip"
   },
   "main": "bindings/node",
   "dependencies": {
-    "nan": "^2.18.0"
+    "node-addon-api": "^7.1.0",
+    "node-gyp-build": "^4.8.0"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree_sitter": {
+      "optional": true
+    }
   },
   "devDependencies": {
-    "tree-sitter-cli": "~0.21.0-pre-release-1"
+    "tree-sitter-cli": "~0.21.0-pre-release-1",
+    "prebuildify": "^6.0.0"
   },
   "tree-sitter": [
     {
