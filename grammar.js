@@ -562,8 +562,8 @@ module.exports = grammar({
 
     booleanConstant: (_$) => token(choice('true', 'false')),
 
-    // variable: ($) => $.name,
-    variable: (_$) => /\$[A-Za-z0-9_]*/,
+    // variable: ($ or ^) => $.name,
+    variable: (_$) => /[\$\^][A-Za-z0-9_]*/,
 
     // name for variables, labels
     name: (_$) => /[\^#A-Za-z_][A-Za-z0-9_]*/,
