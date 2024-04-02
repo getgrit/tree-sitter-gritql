@@ -69,6 +69,9 @@ module.exports = grammar({
           // Markflow flavors:
           'inline',
           'block',
+          // PHP flavors:
+          'only',
+          'html',
         ),
       ),
 
