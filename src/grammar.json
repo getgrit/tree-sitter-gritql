@@ -363,6 +363,14 @@
           {
             "type": "STRING",
             "value": "block"
+          },
+          {
+            "type": "STRING",
+            "value": "only"
+          },
+          {
+            "type": "STRING",
+            "value": "html"
           }
         ]
       }
