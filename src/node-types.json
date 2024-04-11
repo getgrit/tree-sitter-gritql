@@ -14388,6 +14388,10 @@
     "named": false
   },
   {
+    "type": "cpp",
+    "named": false
+  },
+  {
     "type": "csharp",
     "named": false
   },
@@ -14637,11 +14641,11 @@
   },
   {
     "type": "variable",
-    "named": true
+    "named": false
   },
   {
     "type": "variable",
-    "named": false
+    "named": true
   },
   {
     "type": "where",

@@ -5883,6 +5883,10 @@
         {
           "type": "STRING",
           "value": "ruby"
+        },
+        {
+          "type": "STRING",
+          "value": "cpp"
         }
       ]
     },
@@ -6094,4 +6098,3 @@
   "inline": [],
   "supertypes": []
 }
-

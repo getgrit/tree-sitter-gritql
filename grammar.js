@@ -600,6 +600,7 @@ module.exports = grammar({
         'php',
         'c',
         'ruby',
+        'cpp',
       ),
 
     backtickSnippet: (_$) => /`(?:[^`\\]|\\\$|\\\\|\\`|\\n)*`/,
