@@ -5879,6 +5879,10 @@
         {
           "type": "STRING",
           "value": "c"
+        },
+        {
+          "type": "STRING",
+          "value": "ruby"
         }
       ]
     },
@@ -6090,3 +6094,4 @@
   "inline": [],
   "supertypes": []
 }
+
