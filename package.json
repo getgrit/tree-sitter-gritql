@@ -11,6 +11,14 @@
     "lexer",
     "gritql"
   ],
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**"
+  ],
   "scripts": {
     "build": "tree-sitter generate",
     "parse": "tree-sitter parse",
@@ -22,6 +30,7 @@
     "prebuildify": "prebuildify --napi --strip"
   },
   "main": "bindings/node",
+  "types": "bindings/node",
   "dependencies": {
     "node-addon-api": "^7.1.0",
     "node-gyp-build": "^4.8.0"

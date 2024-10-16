@@ -236,7 +236,14 @@ module.exports = grammar({
       ),
     // --- conditional pattern ------------
 
-    within: ($) => seq('within', allowCurly(field('pattern', $._pattern))),
+    within: ($) =>
+      prec.right(
+        seq(
+          'within',
+          allowCurly(field('pattern', $._pattern)),
+          optional(seq('until', field('until', $._pattern))),
+        ),
+      ),
 
     _bubbleScope: ($) => prec.right(seq('bubble', optional(seq('(', commaSep($.variable), ')')))),
 
