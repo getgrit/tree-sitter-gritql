@@ -13343,6 +13343,7 @@
   {
     "type": "source_file",
     "named": true,
+    "root": true,
     "fields": {
       "definitions": {
         "multiple": true,
@@ -14678,6 +14679,10 @@
     "named": false
   },
   {
+    "type": "kotlin",
+    "named": false
+  },
+  {
     "type": "language",
     "named": false
   },
@@ -14847,11 +14852,11 @@
   },
   {
     "type": "variable",
-    "named": false
+    "named": true
   },
   {
     "type": "variable",
-    "named": true
+    "named": false
   },
   {
     "type": "where",
