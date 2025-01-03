@@ -609,6 +609,7 @@ module.exports = grammar({
         'ruby',
         'cpp',
         'kotlin',
+        'elixir',
       ),
 
     backtickSnippet: (_$) => /`(?:[^`\\]|\\\$|\\\\|\\`|\\n)*`/,
