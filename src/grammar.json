@@ -5921,6 +5921,10 @@
         {
           "type": "STRING",
           "value": "kotlin"
+        },
+        {
+          "type": "STRING",
+          "value": "elixir"
         }
       ]
     },
